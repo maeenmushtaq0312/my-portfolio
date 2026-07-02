@@ -1,36 +1,21 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
     background: #0f172a;
     color: white;
-    line-height: 1.6;
-}
-
-header {
-    background: #1e293b;
-    padding: 20px 50px;
-    position: sticky;
-    top: 0;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 20px 50px;
+    background: #111827;
 }
 
 nav ul {
-    display: flex;
     list-style: none;
-}
-
-nav ul li {
-    margin-left: 20px;
+    display: flex;
+    gap: 20px;
 }
 
 nav a {
@@ -43,65 +28,33 @@ nav a {
     padding: 100px 20px;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.hero button {
-    padding: 12px 25px;
-    border: none;
-    background: #38bdf8;
+.btn {
+    background: cyan;
     color: black;
-    font-size: 18px;
-    border-radius: 8px;
-    cursor: pointer;
+    padding: 12px 25px;
+    border-radius: 10px;
+    text-decoration: none;
 }
 
 section {
-    padding: 80px 50px;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 30px;
+    padding: 60px;
 }
 
 .skills {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    gap: 15px;
     flex-wrap: wrap;
 }
 
-.skills div,
+.skills span {
+    background: #1e293b;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
 .project-card {
     background: #1e293b;
     padding: 20px;
     border-radius: 10px;
-    margin: 10px;
-}
-
-.project-card {
-    max-width: 400px;
-    margin: 20px auto;
-}
-
-#contact {
-    text-align: center;
-    background: #1e293b;
-}
-
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-    }
-
-    nav ul {
-        margin-top: 15px;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-    }
+    margin-bottom: 20px;
 }
